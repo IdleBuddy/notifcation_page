@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Notifications page</title>
+</head>
+<body>
+  <main>
+    <!--Title Navigation-->
+    <div class="title">
+      <div class="header">
+        <h1>Notifications</h1>
+        <span id="notif">0</span>
+      </div>
+        
+      <button id="mark_all">Mark all as Read</button>
+    </div>
+    <!--Body of Notifications, Holds the Notification Cards-->
+    <div class="body">
+      <div class="card new">
+       <img src="/assets/images/avatar-mark-webber.webp" alt="" class="card-icon">
+        <div class="card-body">
+          <p><b class="card-name">Mark Webber</b> reacted to your recent post <a href="#">My first tournament today!</a></p>
+          <div class="time-stamp">1m ago</div>
+        </div>
+      </div>
+      <div class="card new">
+          <img src="/assets/images/avatar-angela-gray.webp" alt="" class="card-icon">
+        <div class="card-body">
+          <p><b class="card-name">Angela Gray</b> followed you</p>
+          <div class="time-stamp">5m ago</div>
+        </div>
+      </div>
+      <div class="card new">
+          <img src="/assets/images/avatar-jacob-thompson.webp" alt="" class="card-icon">
+        <div class="card-body">
+          <p><b class="card-name">Jacob Thompson</b> has joined your group <a href="#">Chess Club</a></p>
+          <div class="time-stamp">1 day ago</div>
+        </div>
+      </div>
+      <div class="card new">
+          <img src="/assets/images/avatar-rizky-hasanuddin.webp" alt="" class="card-icon">
+        <div class="card-body">
+          <p><b class="card-name">Rizky Hasanuddin</b> sent you a private message</p>
+          <div class="time-stamp">5 days ago</div>
+          <div class="message">
+            <small>
+              Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and 
+              I'm already having lots of fun and improving my game.
+            </small>
+          </div>
+        </div>
+      </div>
+      <div class="card new">
+          <img src="/assets/images/avatar-kimberly-smith.webp" alt="" class="card-icon">
+        <div class="card-body">
+          <p><b class="card-name">Kimberly Smith</b> comment on your picture</p>
+          <div class="time-stamp">1 week ago</div>
+        </div>
+          <img src="/assets/images/image-chess.webp" alt="" class="card-img">
+      </div>
+      <div class="card new">
+          <img src="/assets/images/avatar-nathan-peterson.webp" alt="" class="card-icon">
+        <div class="card-body">
+          <p><b class="card-name">Nathan Peterson</b> reacted to your recent post <a href="">5 end-game stratagies to increase your win rate</a></p>
+          <div class="time-stamp">2 weeks ago</div>
+        </div>
+      </div>
+      <div class="card new">
+          <img src="/assets/images/avatar-anna-kim.webp" alt="" class="card-icon">
+        <div class="card-body">
+          <p><b class="card-name">Anna Kim</b> left the group <a href="#" class="notable-link">Chess Club</a></p>
+          <div class="time-stamp">2 weeks ago</div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

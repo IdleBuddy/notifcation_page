@@ -1,0 +1,149 @@
+@font-face {
+    font-family: "JakartaSans";
+    src: url(/assets/fonts/PlusJakartaSans-VariableFont_wght.ttf) format('TrueType');
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html, body {
+    font-family: "JakartaSans", sans-serif;
+    height: 100%;
+}
+
+main {
+    background-color: white;
+}
+
+.title {
+    display: flex;
+    margin: 20px;
+    justify-content: space-between;
+}
+
+h1 {
+    font-size: 20px;
+    font-weight: 1000;
+    display: inline-block;
+}
+
+#notif {
+    font-weight: 700;
+    background-color: hsl(219, 85%, 26%);
+    padding: 3px 8px;
+    color: white;
+    margin-left: 6px;
+    border-radius: 5px;
+}
+button {
+    border: none;
+    background-color: transparent;
+    font-family: "JakartaSans", sans-serif;
+    font-weight: 500;
+    color: hsl(217, 9%, 37%);
+    font-size: 14px;
+}
+
+button:hover {
+    cursor: pointer;
+    color: hsl(220, 27%, 50%);
+    font-weight: 550;
+}
+
+/*Card Design*/
+
+.card {
+    display: flex;
+    padding: 20px;
+    font-size: 16px;
+    flex-wrap: wrap;
+    margin: 8px 15px;
+}
+
+.card > div {
+    flex: 1;
+}
+
+.new {
+    background-color: hsl(211, 68%, 94%);
+    border-radius: 10px;
+}
+
+.card-icon, .card-img {
+    max-width: 36px;
+    height: 36px;
+}
+
+.card-img:hover {
+    cursor: pointer;
+}
+
+.card-name {
+    color: rgb(29, 29, 29);
+    margin-right: 2px;
+}
+
+.card-body {
+    margin-left: 15px;
+    color: hsl(219, 12%, 42%);
+}
+
+.new p::after {
+    content: '';
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    border-radius: 7px;
+    margin-left: 5px;
+    margin-bottom: 5px;
+    background-color: hsl(1, 90%, 64%);
+}
+
+.time-stamp {
+    margin-top: 3px;
+    font-size: 12px;
+    color: hsl(219, 14%, 63%);
+}
+
+a {
+    text-decoration: none;
+    font-weight: 700;
+    color: hsl(219, 85%, 26%);
+    margin-left: 2px;
+}
+
+a:hover {
+    color: hsl(225, 44%, 49%);
+}
+
+.message {
+    border: 1px solid hsl(205, 33%, 90%);
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.message:hover {
+    cursor: pointer;
+    transform: scale(1.02);
+    background-color: hsl(210, 60%, 98%);
+}
+
+
+@media screen and (min-width: 510px) {
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: hsl(210, 60%, 98%);
+    }
+
+    main {
+        max-width: 550px;
+        border-radius: 10px;
+        padding: 5px 0px;
+    }
+}
